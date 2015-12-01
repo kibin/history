@@ -71,5 +71,5 @@ const filterLinks =
 
 export {
   filterLinks,
-  supportsHistory
+  supportsHistory,
 }

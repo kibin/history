@@ -147,7 +147,7 @@ describe(`makeServerHistoryDriver`, () => {
   describe(`serverHistorySubject`, () => {
     it(`should return the passed in location`, done => {
       makeServerHistoryDriver(serverConfig)()
-        .debounce(1)
+        //.debounce(1)
         .observe(location => {
           assert.strictEqual(typeof location, `object`)
           assert.strictEqual(location.pathname, `/about`)

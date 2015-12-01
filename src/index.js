@@ -1,14 +1,15 @@
+import Most from 'most'
+import Subject from 'most-subject'
 import {
   createHistory,
   createHashHistory,
   useQueries,
-  useBasename
+  useBasename,
 } from 'history'
 import keys from 'fast.js/object/keys'
 import forEach from 'fast.js/array/forEach'
 
 import {filterLinks, supportsHistory} from './utils'
-import Subject from './subject'
 
 const makeHistory =
   (hash, queries, options) => {
@@ -64,8 +65,8 @@ const makeHistoryDriver =
     const historyDriver =
       url$ => {
         url$.observe(createPushState(history, options.basename || ``))
-        history.listen(location => historySubject.add(location))
-        return historySubject
+        history.listen(location => historySubject.sink.add(location))
+        return historySubject.stream
       }
 
     return historyDriver
@@ -83,7 +84,7 @@ const makeServerHistoryDriver =
     } = startingLocation || {}
 
     const historyDriver =
-      () => Subject({
+      () => Most.just({
         pathname,
         query,
         search,
@@ -98,5 +99,5 @@ const makeServerHistoryDriver =
 export {
   makeHistoryDriver,
   makeServerHistoryDriver,
-  filterLinks
+  filterLinks,
 }
