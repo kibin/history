@@ -3,7 +3,7 @@ import assert from 'assert'
 import {
   makeHistoryDriver,
   makeServerHistoryDriver
-} from '../../src'
+} from '../src'
 import {createLocation} from 'history'
 import most from 'most'
 
