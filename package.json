@@ -48,7 +48,7 @@
     "mocha": "2.3.4",
     "most": "0.16.0",
     "testem": "0.9.11",
-    "validate-commit-msg": "1.0.0"
+    "validate-commit-message": "3.0.1"
   },
   "dependencies": {
     "fast.js": "0.1.1",
