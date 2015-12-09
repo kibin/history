@@ -62,7 +62,7 @@ describe(`makeHistoryDriver`, () => {
   })
 
   describe(`historyDriver`, () => {
-    const historyDriver = makeHistoryDriver()
+    const historyDriver = makeHistoryDriver({hash: true})
 
     it(`should accept a stream of stateless urls`, done => {
       assert.doesNotThrow(() => {
@@ -87,7 +87,7 @@ describe(`makeHistoryDriver`, () => {
 
     describe(`historySubject`, () => {
       it(`should return a history location object`, done => {
-        makeHistoryDriver()(statefulUrl$)
+        makeHistoryDriver({hash: true})(statefulUrl$)
           .debounce(1)
           .observe(location => {
             assert.strictEqual(typeof location, `object`)
