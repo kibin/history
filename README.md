@@ -15,6 +15,6 @@ $ npm install @motorcycle/history
 ## Want to Contribute?
 
 If you found an issue or want to contribute code, please read
-the [contributing guidelines][contributing]
+the [contributing guidelines](https://github.com/motorcyclejs/motorcycle/blob/master/CONTRIBUTING.md)
 
 Documentation can be found  [here](https://github.com/motorcyclejs/motorcycle-history/tree/master/docs/).
