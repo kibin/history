@@ -1,4 +1,4 @@
-# Motorcycle History Driver
+# Motorcycle History Driver [![Build Status](https://travis-ci.org/motorcyclejs/history.svg?branch=develop)](https://travis-ci.org/motorcyclejs/history)
 
 This is the standard Cycle driver for dealing with the [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API).
 
