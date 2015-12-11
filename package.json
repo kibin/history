@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/motorcyclejs/motorcycle-history.git"
+    "url": "git+https://github.com/motorcyclejs/history.git"
   },
   "keywords": [
     "Motorcyclejs",
@@ -28,9 +28,9 @@
   "author": "Tylor Steinberger <tlsteinberger167@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/motorcyclejs/motorcycle-history/issues"
+    "url": "https://github.com/motorcyclejs/history/issues"
   },
-  "homepage": "https://github.com/motorcyclejs/motorcycle-history#readme",
+  "homepage": "https://github.com/motorcyclejs/history#readme",
   "devDependencies": {
     "assert": "1.3.0",
     "babel-cli": "6.3.15",
