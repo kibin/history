@@ -1,6 +1,6 @@
 {
   "name": "@motorcycle/history",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "History Driver for Motorcycle.js",
   "main": "lib/index.js",
   "scripts": {
