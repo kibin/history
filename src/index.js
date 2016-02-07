@@ -1,5 +1,5 @@
 import Most from 'most'
-import Subject from 'most-subject'
+import {subject as Subject} from 'most-subject'
 import {
   createHistory,
   createHashHistory,
